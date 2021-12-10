@@ -14,7 +14,7 @@ const getTrappedRainwater = (heights) => {
     }
 
     const currentWater = Math.min(maxLeft, maxRight) - heights[p];
-    if(currentWater >= 0) totalWater += currentWater;
+    if(currentWater >= 0) totalWater += currentWater; 
   }
 
   return totalWater;
