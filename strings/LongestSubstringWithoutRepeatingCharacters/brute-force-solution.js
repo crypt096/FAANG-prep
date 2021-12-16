@@ -18,4 +18,6 @@ const lengthOfLongestSubstring = s => {
       }
     }
   }
+
+  return longest;
 }
