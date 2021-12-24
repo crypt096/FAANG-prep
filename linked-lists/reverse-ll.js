@@ -1,7 +1,13 @@
 const reverseLinkedList = (head) => {
-  let currentNode = head;
-  while(currentNode) {
-    // perform operation
-    currentNode = currentNode.next;
+  let prev = null;
+  let current = head;
+
+  while(current) {
+    let next = current.next;
+    current.next = prev;
+    prev = current;
+    current = next;
   }
+
+  return prev;
 }
